@@ -1,0 +1,192 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f9f9f9;
+}
+
+/* Header Styles */
+header {
+    background-color: #ff6600;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Roboto Slab', serif;
+}
+
+header .logo {
+    height: 50px;
+}
+
+header nav {
+    margin: 0;
+}
+
+header ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 10px;
+}
+
+header ul li {
+    display: inline;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    background-color: #e55b00;
+}
+
+header ul li a:hover {
+    background-color: #cc5200;
+    text-decoration: none;
+}
+
+/* Recipe Content Styles */
+.recipe-content {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.ingredients, .instructions {
+    flex: 1;
+}
+
+.ingredients img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Instructions Section Styles */
+.instructions {
+    margin-top: 20px;
+}
+
+.instructions ol {
+    padding-left: 20px;
+}
+
+/* Recipe Tips Section Styles */
+#recipe-tips {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+#recipe-tips h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#recipe-tips ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+#recipe-tips ul li {
+    margin-bottom: 10px;
+}
+
+/* Comments Section Styles */
+#comments {
+    margin-top: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #ff6600;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #e55b00;
+}
+
+/* Footer Styles */
+footer {
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #ff6600;
+    color: white;
+    text-align: center;
+}
+
+footer h2 {
+    margin: 0;
+}
+
+footer nav {
+    margin-top: 10px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    background-color: #e55b00;
+}
+
+footer ul li a:hover {
+    background-color: #cc5200;
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .recipe-content {
+        flex-direction: column;
+    }
+
+    header ul {
+        flex-direction: column;
+    }
+
+    header ul li {
+        margin: 5px 0;
+    }
+}

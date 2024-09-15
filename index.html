@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chocolate Muffins Recipe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #9a9a9a;
+        }
+        /* Header Styles */
+        header {
+            background-color: #650e74;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'Roboto Slab', serif;
+        }
+        header .logo {
+            height: 50px;
+        }
+        header nav {
+            margin: 0;
+        }
+        header ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 10px;
+        }
+        header ul li {
+            display: inline;
+        }
+        header ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            background-color: #450539;
+        }
+        header ul li a:hover {
+            background-color: #450539;
+            text-decoration: none;
+        }
+        /* Recipe Content Styles */
+        .recipe-content {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .ingredients, .instructions {
+            flex: 1;
+        }
+        .ingredients img {
+            width: 200px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        /* Instructions Section Styles */
+        .instructions {
+            margin-top: 20px;
+        }
+        .instructions ol {
+            padding-left: 20px;
+        }
+        /* Comments Section Styles */
+        #comments {
+            margin-top: 30px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #650e74;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #650e74;
+        }
+        /* Recipe Tips Section Styles */
+        #recipe-tips {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #9a9a9a;
+            border: 1px solid #000000;
+            border-radius: 8px;
+        }
+        #recipe-tips h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        #recipe-tips ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        #recipe-tips ul li {
+            margin-bottom: 10px;
+        }
+        /* Footer Styles */
+        footer {
+            margin-top: 30px;
+            padding: 10px;
+            background-color: #650e74;
+            color: white;
+            text-align: center;
+        }
+        footer h2 {
+            margin: 0;
+        }
+        footer nav {
+            margin-top: 10px;
+        }
+        footer ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        footer ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        footer ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            background-color: #450539;
+        }
+        footer ul li a:hover {
+            background-color: #450539;
+            text-decoration: none;
+        }
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .recipe-content {
+                flex-direction: column;
+            }
+            header ul {
+                flex-direction: column;
+            }
+            header ul li {
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Chocolate Muffins</h1>
+        <nav>
+            <ul>
+                <li><a href="#ingredients">Ingredients</a></li>
+                <li><a href="#instructions">Instructions</a></li>
+                <li><a href="#recipe-tips">Recipe Tips</a></li>
+                <li><a href="#comments">Comments</a></li>
+                <li><a href="#footer">Footer</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="recipe-content">
+        <section class="ingredients">
+            <h2>Ingredients</h2>
+            <ul>
+                <li>2 cups flour</li>
+                <li>1/2 cup cocoa powder</li>
+                <li>1 cup sugar</li>
+                <li>1 tsp baking powder</li>
+                <li>1/2 tsp salt</li>
+                <li>1 cup milk</li>
+                <li>1/2 cup vegetable oil</li>
+                <li>2 eggs</li>
+                <li>1 tsp vanilla extract</li>
+                <li>1 cup chocolate chips</li>
+            </ul>
+        </section>
+
+        <div class="image">
+            <img src="https://sallysbakingaddiction.com/wp-content/uploads/2021/03/double-chocolate-chip-muffins.jpg" alt="Chocolate Muffins" style="height: 250px; width: 150px;">
+        </div>
+    </div>
+
+    <section class="instructions">
+        <h2>Instructions</h2>
+        <ol>
+            <li>Preheat the oven to 180°C (350°F). Place the oven rack in the center position to ensure even heat distribution during baking.</li>
+            <li>In a large mixing bowl, combine all the dry ingredients. Use a whisk or a sifter to thoroughly combine the dry ingredients. Sifting helps remove any lumps and ensures the baking powder is evenly distributed, so your muffins rise uniformly. Set the bowl aside once mixed.</li>
+            <li>In a separate medium-sized bowl, combine the wet ingredients. Use a whisk to beat the eggs until smooth, then add the other wet ingredients. Make sure the melted butter or oil is fully incorporated, and the mixture is smooth.</li>
+            <li>Pour the wet ingredients into the bowl with the dry ingredients. Using a spatula or wooden spoon, gently fold the two mixtures together. Be careful not to overmix; it’s important to combine just until no dry streaks of flour remain.</li>
+            <li>Once the wet and dry ingredients are combined, fold in the chocolate chips (or any other add-ins, like nuts or berries). Use a spatula and gently incorporate them into the batter, ensuring they’re evenly distributed.</li>
+            <li>Line a 12-cup muffin tin with paper liners, or grease the cups well with butter or non-stick spray to prevent the muffins from sticking. Using a spoon or a cookie scoop, evenly divide the batter among the prepared muffin cups. Fill each cup about two-thirds to three-quarters full to allow room for the muffins to rise.</li>
+            <li>Place the muffin tin in the preheated oven and bake for 20-25 minutes. To ensure they bake evenly, avoid opening the oven door during the first 15 minutes. The muffins are done when the tops are set and a toothpick inserted into the center comes out clean or with a few moist crumbs. If the toothpick comes out with wet batter, let them bake for a few more minutes and test again.</li>
+        </ol>
+    </section>
+
+    <!-- Recipe Tips Section -->
+    <section id="recipe-tips">
+        <h2>Recipe Tips</h2>
+        <ul>
+            <li>Serve the muffins warm with a dollop of whipped cream or a drizzle of chocolate sauce for an indulgent treat.</li>
+            <li>For a slightly healthier option, try adding a handful of fresh berries or nuts to the batter.</li>
+            <li>These muffins can be frozen for up to 3 months. Simply let them cool completely, then place them in an airtight container or freezer bag.</li>
+            <li>For extra flavor, try sprinkling a bit of sea salt on top before baking.</li>
+            <li>Pair the muffins with a cup of coffee or hot chocolate for a delicious breakfast or afternoon snack.</li>
+        </ul>
+    </section>
+
+    <section id="comments">
+        <h2>Leave a Comment</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="comment">Comment:</label>
+            <textarea id="comment" name="comment" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <h2>RecipeBook</h2>
+        <section>
+            <nav>
+                <ul id="footer-ul">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Contacts</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                </ul>
+            </nav>
+        </section>
+    </footer>
+
+</body>
+</html>
